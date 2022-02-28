@@ -1,3 +1,110 @@
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    background: #fec619;
+}
 h1 {
-    color: purple;
+    margin-bottom: 2.5rem;
+}
+a {
+    color: #a10ebd;
+}
+
+section {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+}
+
+article {
+    margin: 6rem auto;
+    text-align: center;
+}
+/* image styling */
+img {
+    display: block;
+    margin: 0 auto;
+    width: 100%;
+    max-width: 800px;
+}
+figure {
+    display: block;
+    margin: 3rem auto;
+    width: 90%;
+    max-width: 800px;
+    border: 1px solid;
+}
+figcaption {
+    text-align: center;
+    width: 90%;
+    max-width: 800px;
+    margin: 0 auto;
+    padding-top: 1rem;
+    padding-bottom: 1rem;
+}
+span.location {
+    font-style: italic;
+}
+/* Responsive nav styles using Flexbox */
+nav {
+    width: 100vw;
+    /* background: #D6EFFF; */
+    background: transparent;
+}
+
+ul {
+    display: flex;
+    justify-content: flex-end;
+    /* margin-top: -1.5rem; */
+}
+
+li {
+    list-style-type: none;
+    margin: 0.5vw;
+    font-size: 2.75vh;
+}
+
+a {
+    text-decoration: none;
+    color: black;
+    padding: 2vw;
+    font-family: monospace;
+}
+
+.hamburger {
+    display: none;
+}
+
+.navbar {
+    background: transparent;
+}
+
+a:hover {
+    color: #2f6690;
+}
+/* Site Footer  Styling */
+.site-credits {
+    text-align: center;
+}
+/* Sticky Footer Sylting */
+html,
+body {
+    height: 100%;
+}
+
+body {
+    display: flex;
+    flex-direction: column;
+}
+
+.site-content {
+    flex: 1 0 auto;
+}
+
+.site-credits {
+    flex-shrink: 0;
+    font-size: 1.2rem;
 }
